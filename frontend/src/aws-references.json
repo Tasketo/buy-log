@@ -1,0 +1,8 @@
+{
+    "region": "eu-central-1",
+    "buy-log-attachment-bucket": "buy-log-backend-attachments23cbb7c9-1qd30bd7i6ljf",
+    "buy-log-identity-pool-id": "eu-central-1:e6387fc7-4bb1-4808-a15b-6b0586e052b2",
+    "buy-log-items-endpoint": "https://wlljlnj3qc.execute-api.eu-central-1.amazonaws.com/prod/",
+    "buy-log-user-pool-client-id": "6nkffil71ncihrc6o1sd7jc2pu",
+    "buy-log-user-pool-id": "eu-central-1_AH2TRzzGG"
+}

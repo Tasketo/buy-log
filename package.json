@@ -1,27 +1,20 @@
 {
-  "name": "aws-buy-log",
-  "version": "0.1.0",
-  "bin": {
-    "aws-buy-log": "bin/aws-buy-log.js"
-  },
+  "name": "buy-log",
+  "version": "1.0.0",
   "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
+    "install": "lerna bootstrap",
+    "setup": "node .scripts/cli.js setup",
+    "deploy": "sh .scripts/deploy.sh",
+    "destroy": "cd cdk && cdk destroy --all --force",
+    "clean": "lerna run clean --parallel && rm -rf ./node_modules",
+    "frontend:prepare": "node .scripts/prepare-frontend.js"
   },
+  "keywords": [],
+  "author": "tasketo",
   "devDependencies": {
-    "@aws-cdk/assert": "1.91.0",
-    "@types/jest": "^26.0.10",
-    "@types/node": "10.17.27",
-    "jest": "^26.4.2",
-    "ts-jest": "^26.2.0",
-    "aws-cdk": "1.91.0",
-    "ts-node": "^9.0.0",
-    "typescript": "~3.9.7"
-  },
-  "dependencies": {
-    "@aws-cdk/core": "1.91.0",
-    "source-map-support": "^0.5.16"
+    "@aws-sdk/client-cloudformation": "^3.12.0",
+    "commander": "^7.2.0",
+    "inquirer": "^7.3.3",
+    "lerna": "^4.0.0"
   }
 }

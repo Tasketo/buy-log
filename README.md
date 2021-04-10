@@ -1,14 +1,24 @@
-# Welcome to your CDK TypeScript project!
+# Buy Log
 
-This is a blank project for TypeScript development with CDK.
+## Folder Structure / packages
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+- [cdk](./cdk/README.md) contains all the AWS Resource, which are deployed using the cd
+- [lambda](./lambda/README.md) contains all the plain source-code of the lambda functions
+- [frontend](./frontend/README.md) contains the frontend code
+- `.scripts` contains some helper scripts for building and deploying
 
-## Useful commands
+## Preconditions
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+- Install [node.js](https://nodejs.org/en/download/)
+- Setup [cdk](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html#getting_started_prerequisites)
+
+## Full build & deploy
+
+- Create a hosted zone in Route53 of AWS for your domain
+- Run `npm install`
+- Run `npn run setup`
+- Run `npm run deploy`
+
+# TODO
+
+- request validation
