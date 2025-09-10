@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/uuid": "^8.3.0",
     "aws-amplify": "3.3.22",
-    "element-plus": "^1.0.2-beta.33",
+    "element-plus": "^2.11.0",
     "uuid": "^3.4.0",
     "vue": "3.0.7",
     "vue-router": "4.0.4",
